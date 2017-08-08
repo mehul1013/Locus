@@ -8,15 +8,27 @@
 
 import UIKit
 import CoreData
+import CoreLocation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
 
     var window: UIWindow?
+    var strDeviceToken  : String?
+    var locationManager : CLLocationManager!
+    var strLat          : String! = "0"
+    var strLong         : String! = "0"
+    var completionBlock : (CLLocationCoordinate2D) -> Void = {_ in }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        //Location Manager
+        self.initializeLocationManager()
+        
+        
         return true
     }
 
@@ -93,6 +105,60 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             // Fallback on earlier versions
         }
+    }
+    
+    
+    //MARK: - Location Manager: - Get Current Location
+    func initializeLocationManager() {
+        
+        locationManager = CLLocationManager()
+        
+        locationManager.delegate        = self
+        locationManager.distanceFilter  = 50
+        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        locationManager.requestAlwaysAuthorization()
+        locationManager.requestWhenInUseAuthorization()
+        
+        // Specify the type of activity your app is currently performing
+        locationManager.activityType    = .otherNavigation
+        
+        // Enable background location updates
+        //        locationManager.allowsBackgroundLocationUpdates = true
+        locationManager.startUpdatingLocation()
+    }
+    
+    func getCurrentLocation(onCompletion:@escaping (CLLocationCoordinate2D) -> Void) {
+        
+        completionBlock = onCompletion
+        if CLLocationManager.locationServicesEnabled() {
+            
+            switch(CLLocationManager.authorizationStatus()) {
+                
+            case .notDetermined:
+                print("Not Determined")
+            case .restricted, .denied:
+                print("Not Determined")
+            case .authorizedAlways, .authorizedWhenInUse:
+                locationManager.startUpdatingLocation()
+            }
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        strLat  = "0"
+        strLong = "0"
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        if let locValue:CLLocationCoordinate2D = manager.location?.coordinate {
+            strLat  = getStringFromAnyObject(locValue.latitude as AnyObject)
+            strLong = getStringFromAnyObject(locValue.longitude as AnyObject)
+        }else {
+            print("\n\nERROR == >> locations\n\n ")
+        }
+        
+        locationManager.stopUpdatingLocation()
     }
 
 }

@@ -16,6 +16,16 @@
 		2A370DB21F39935D004BB0FF /* LocusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A370DB11F39935D004BB0FF /* LocusTests.swift */; };
 		2A370DBD1F39935D004BB0FF /* LocusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A370DBC1F39935D004BB0FF /* LocusUITests.swift */; };
 		2A370DCB1F3993A4004BB0FF /* Information in Resources */ = {isa = PBXBuildFile; fileRef = 2A370DCA1F3993A4004BB0FF /* Information */; };
+		2A370DD81F39A041004BB0FF /* Information in Resources */ = {isa = PBXBuildFile; fileRef = 2A370DD71F39A041004BB0FF /* Information */; };
+		2A370DDA1F39A047004BB0FF /* Information in Resources */ = {isa = PBXBuildFile; fileRef = 2A370DD91F39A047004BB0FF /* Information */; };
+		2A370DDC1F39A04C004BB0FF /* Information in Resources */ = {isa = PBXBuildFile; fileRef = 2A370DDB1F39A04C004BB0FF /* Information */; };
+		2A370DDE1F39A057004BB0FF /* Information in Resources */ = {isa = PBXBuildFile; fileRef = 2A370DDD1F39A057004BB0FF /* Information */; };
+		2A370DE01F39A05C004BB0FF /* Information in Resources */ = {isa = PBXBuildFile; fileRef = 2A370DDF1F39A05C004BB0FF /* Information */; };
+		2A370DE21F39A061004BB0FF /* Information in Resources */ = {isa = PBXBuildFile; fileRef = 2A370DE11F39A061004BB0FF /* Information */; };
+		2A370DE41F39A066004BB0FF /* Information in Resources */ = {isa = PBXBuildFile; fileRef = 2A370DE31F39A066004BB0FF /* Information */; };
+		2A370DE61F39A06C004BB0FF /* Information in Resources */ = {isa = PBXBuildFile; fileRef = 2A370DE51F39A06C004BB0FF /* Information */; };
+		2A370DE81F39A073004BB0FF /* Information in Resources */ = {isa = PBXBuildFile; fileRef = 2A370DE71F39A073004BB0FF /* Information */; };
+		2A370DEA1F39A07B004BB0FF /* Information in Resources */ = {isa = PBXBuildFile; fileRef = 2A370DE91F39A07B004BB0FF /* Information */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,16 @@
 		2A370DBC1F39935D004BB0FF /* LocusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocusUITests.swift; sourceTree = "<group>"; };
 		2A370DBE1F39935D004BB0FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A370DCA1F3993A4004BB0FF /* Information */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Information; sourceTree = "<group>"; };
+		2A370DD71F39A041004BB0FF /* Information */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Information; sourceTree = "<group>"; };
+		2A370DD91F39A047004BB0FF /* Information */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Information; sourceTree = "<group>"; };
+		2A370DDB1F39A04C004BB0FF /* Information */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Information; sourceTree = "<group>"; };
+		2A370DDD1F39A057004BB0FF /* Information */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Information; sourceTree = "<group>"; };
+		2A370DDF1F39A05C004BB0FF /* Information */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Information; sourceTree = "<group>"; };
+		2A370DE11F39A061004BB0FF /* Information */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Information; sourceTree = "<group>"; };
+		2A370DE31F39A066004BB0FF /* Information */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Information; sourceTree = "<group>"; };
+		2A370DE51F39A06C004BB0FF /* Information */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Information; sourceTree = "<group>"; };
+		2A370DE71F39A073004BB0FF /* Information */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Information; sourceTree = "<group>"; };
+		2A370DE91F39A07B004BB0FF /* Information */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Information; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +172,7 @@
 		2A370DCD1F399487004BB0FF /* Document */ = {
 			isa = PBXGroup;
 			children = (
+				2A370DD71F39A041004BB0FF /* Information */,
 			);
 			path = Document;
 			sourceTree = "<group>";
@@ -159,6 +180,7 @@
 		2A370DCE1F399487004BB0FF /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				2A370DD91F39A047004BB0FF /* Information */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -166,6 +188,7 @@
 		2A370DCF1F399487004BB0FF /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				2A370DDB1F39A04C004BB0FF /* Information */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -173,6 +196,7 @@
 		2A370DD01F399487004BB0FF /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
+				2A370DDD1F39A057004BB0FF /* Information */,
 			);
 			path = CustomClasses;
 			sourceTree = "<group>";
@@ -180,6 +204,7 @@
 		2A370DD11F399487004BB0FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A370DDF1F39A05C004BB0FF /* Information */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -187,6 +212,7 @@
 		2A370DD21F399487004BB0FF /* ModelManager */ = {
 			isa = PBXGroup;
 			children = (
+				2A370DE11F39A061004BB0FF /* Information */,
 			);
 			path = ModelManager;
 			sourceTree = "<group>";
@@ -194,6 +220,7 @@
 		2A370DD31F399487004BB0FF /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				2A370DE31F39A066004BB0FF /* Information */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -201,6 +228,7 @@
 		2A370DD41F399487004BB0FF /* Thirdparty */ = {
 			isa = PBXGroup;
 			children = (
+				2A370DE51F39A06C004BB0FF /* Information */,
 			);
 			path = Thirdparty;
 			sourceTree = "<group>";
@@ -208,6 +236,7 @@
 		2A370DD51F399487004BB0FF /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				2A370DE71F39A073004BB0FF /* Information */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -215,6 +244,7 @@
 		2A370DD61F399487004BB0FF /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2A370DE91F39A07B004BB0FF /* Information */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -326,8 +356,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A370DD81F39A041004BB0FF /* Information in Resources */,
+				2A370DE61F39A06C004BB0FF /* Information in Resources */,
+				2A370DDE1F39A057004BB0FF /* Information in Resources */,
+				2A370DDA1F39A047004BB0FF /* Information in Resources */,
+				2A370DE81F39A073004BB0FF /* Information in Resources */,
 				2A370DA71F39935D004BB0FF /* LaunchScreen.storyboard in Resources */,
+				2A370DE41F39A066004BB0FF /* Information in Resources */,
+				2A370DE01F39A05C004BB0FF /* Information in Resources */,
+				2A370DE21F39A061004BB0FF /* Information in Resources */,
 				2A370DCB1F3993A4004BB0FF /* Information in Resources */,
+				2A370DDC1F39A04C004BB0FF /* Information in Resources */,
+				2A370DEA1F39A07B004BB0FF /* Information in Resources */,
 				2A370DA41F39935D004BB0FF /* Assets.xcassets in Resources */,
 				2A370D9F1F39935D004BB0FF /* Main.storyboard in Resources */,
 			);
@@ -603,6 +643,7 @@
 				2A370DC31F39935D004BB0FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A370DC41F39935D004BB0FF /* Build configuration list for PBXNativeTarget "LocusTests" */ = {
 			isa = XCConfigurationList;
@@ -611,6 +652,7 @@
 				2A370DC61F39935D004BB0FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A370DC71F39935D004BB0FF /* Build configuration list for PBXNativeTarget "LocusUITests" */ = {
 			isa = XCConfigurationList;
@@ -619,6 +661,7 @@
 				2A370DC91F39935D004BB0FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

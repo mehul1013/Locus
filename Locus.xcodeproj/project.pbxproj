@@ -15,6 +15,7 @@
 		2A370DA71F39935D004BB0FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A370DA51F39935D004BB0FF /* LaunchScreen.storyboard */; };
 		2A370DB21F39935D004BB0FF /* LocusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A370DB11F39935D004BB0FF /* LocusTests.swift */; };
 		2A370DBD1F39935D004BB0FF /* LocusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A370DBC1F39935D004BB0FF /* LocusUITests.swift */; };
+		2A370DCB1F3993A4004BB0FF /* Information in Resources */ = {isa = PBXBuildFile; fileRef = 2A370DCA1F3993A4004BB0FF /* Information */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2A370DB81F39935D004BB0FF /* LocusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A370DBC1F39935D004BB0FF /* LocusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocusUITests.swift; sourceTree = "<group>"; };
 		2A370DBE1F39935D004BB0FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A370DCA1F3993A4004BB0FF /* Information */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Information; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		2A370D981F39935D004BB0FF /* Locus */ = {
 			isa = PBXGroup;
 			children = (
+				2A370DCA1F3993A4004BB0FF /* Information */,
 				2A370D991F39935D004BB0FF /* AppDelegate.swift */,
 				2A370D9B1F39935D004BB0FF /* ViewController.swift */,
 				2A370D9D1F39935D004BB0FF /* Main.storyboard */,
@@ -106,6 +109,14 @@
 				2A370DA51F39935D004BB0FF /* LaunchScreen.storyboard */,
 				2A370DA81F39935D004BB0FF /* Info.plist */,
 				2A370DA01F39935D004BB0FF /* Locus.xcdatamodeld */,
+				2A370DCC1F399487004BB0FF /* AppResources */,
+				2A370DD01F399487004BB0FF /* CustomClasses */,
+				2A370DD11F399487004BB0FF /* Frameworks */,
+				2A370DD21F399487004BB0FF /* ModelManager */,
+				2A370DD31F399487004BB0FF /* NetworkManager */,
+				2A370DD41F399487004BB0FF /* Thirdparty */,
+				2A370DD51F399487004BB0FF /* Utility */,
+				2A370DD61F399487004BB0FF /* ViewController */,
 			);
 			path = Locus;
 			sourceTree = "<group>";
@@ -126,6 +137,86 @@
 				2A370DBE1F39935D004BB0FF /* Info.plist */,
 			);
 			path = LocusUITests;
+			sourceTree = "<group>";
+		};
+		2A370DCC1F399487004BB0FF /* AppResources */ = {
+			isa = PBXGroup;
+			children = (
+				2A370DCD1F399487004BB0FF /* Document */,
+				2A370DCE1F399487004BB0FF /* Fonts */,
+				2A370DCF1F399487004BB0FF /* Media */,
+			);
+			path = AppResources;
+			sourceTree = "<group>";
+		};
+		2A370DCD1F399487004BB0FF /* Document */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
+		2A370DCE1F399487004BB0FF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2A370DCF1F399487004BB0FF /* Media */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		2A370DD01F399487004BB0FF /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+		2A370DD11F399487004BB0FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A370DD21F399487004BB0FF /* ModelManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelManager;
+			sourceTree = "<group>";
+		};
+		2A370DD31F399487004BB0FF /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		2A370DD41F399487004BB0FF /* Thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Thirdparty;
+			sourceTree = "<group>";
+		};
+		2A370DD51F399487004BB0FF /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		2A370DD61F399487004BB0FF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A370DA71F39935D004BB0FF /* LaunchScreen.storyboard in Resources */,
+				2A370DCB1F3993A4004BB0FF /* Information in Resources */,
 				2A370DA41F39935D004BB0FF /* Assets.xcassets in Resources */,
 				2A370D9F1F39935D004BB0FF /* Main.storyboard in Resources */,
 			);
@@ -359,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -402,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -416,6 +508,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Locus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mehula.Locus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,6 +522,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Locus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mehula.Locus;
 				PRODUCT_NAME = "$(TARGET_NAME)";

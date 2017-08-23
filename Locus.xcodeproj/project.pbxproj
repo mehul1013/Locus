@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		136B349C5459D8E084186D5C /* Pods_Locus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A107B88C559F51D001617AC5 /* Pods_Locus.framework */; };
+		2A28133B1F4D5C640036BBCF /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A28133A1F4D5C640036BBCF /* PageViewController.swift */; };
+		2A2813401F4D62A90036BBCF /* First_Intro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A28133C1F4D62A90036BBCF /* First_Intro.png */; };
+		2A2813411F4D62A90036BBCF /* Fourth_Intro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A28133D1F4D62A90036BBCF /* Fourth_Intro.png */; };
+		2A2813421F4D62A90036BBCF /* Second_Intro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A28133E1F4D62A90036BBCF /* Second_Intro.jpg */; };
+		2A2813431F4D62A90036BBCF /* Third_Intro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A28133F1F4D62A90036BBCF /* Third_Intro.png */; };
 		2A370D9A1F39935D004BB0FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A370D991F39935D004BB0FF /* AppDelegate.swift */; };
 		2A370D9C1F39935D004BB0FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A370D9B1F39935D004BB0FF /* ViewController.swift */; };
 		2A370D9F1F39935D004BB0FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A370D9D1F39935D004BB0FF /* Main.storyboard */; };
@@ -157,6 +162,11 @@
 
 /* Begin PBXFileReference section */
 		1150211CA06F67919D8F4924 /* Pods-Locus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Locus/Pods-Locus.debug.xcconfig"; sourceTree = "<group>"; };
+		2A28133A1F4D5C640036BBCF /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		2A28133C1F4D62A90036BBCF /* First_Intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = First_Intro.png; path = ../../../../../../../../../Users/mehula/Downloads/First_Intro.png; sourceTree = "<group>"; };
+		2A28133D1F4D62A90036BBCF /* Fourth_Intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fourth_Intro.png; path = ../../../../../../../../../Users/mehula/Downloads/Fourth_Intro.png; sourceTree = "<group>"; };
+		2A28133E1F4D62A90036BBCF /* Second_Intro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Second_Intro.jpg; path = ../../../../../../../../../Users/mehula/Downloads/Second_Intro.jpg; sourceTree = "<group>"; };
+		2A28133F1F4D62A90036BBCF /* Third_Intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Third_Intro.png; path = ../../../../../../../../../Users/mehula/Downloads/Third_Intro.png; sourceTree = "<group>"; };
 		2A370D961F39935D004BB0FF /* Locus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A370D991F39935D004BB0FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A370D9B1F39935D004BB0FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -364,6 +374,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2A2813391F4D5C640036BBCF /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2A28133A1F4D5C640036BBCF /* PageViewController.swift */,
+			);
+			path = PageViewController;
+			sourceTree = "<group>";
+		};
 		2A370D8D1F39935D004BB0FF = {
 			isa = PBXGroup;
 			children = (
@@ -459,6 +477,10 @@
 		2A370DCF1F399487004BB0FF /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				2A28133C1F4D62A90036BBCF /* First_Intro.png */,
+				2A28133D1F4D62A90036BBCF /* Fourth_Intro.png */,
+				2A28133E1F4D62A90036BBCF /* Second_Intro.jpg */,
+				2A28133F1F4D62A90036BBCF /* Third_Intro.png */,
 				2A370DDB1F39A04C004BB0FF /* Information */,
 			);
 			path = Media;
@@ -525,6 +547,7 @@
 			isa = PBXGroup;
 			children = (
 				2A370DE91F39A07B004BB0FF /* Information */,
+				2A2813391F4D5C640036BBCF /* PageViewController */,
 				2A370DEB1F39A1EC004BB0FF /* Introduction */,
 				2A370DEC1F39A20A004BB0FF /* SuperViewController */,
 			);
@@ -889,11 +912,13 @@
 				2A370DE61F39A06C004BB0FF /* Information in Resources */,
 				2A370ED21F39CA4D004BB0FF /* GOTHAM-THINITALIC.TTF in Resources */,
 				2A370ED91F39CA4D004BB0FF /* Roboto-BlackItalic.ttf in Resources */,
+				2A2813411F4D62A90036BBCF /* Fourth_Intro.png in Resources */,
 				2A370EC91F39CA4D004BB0FF /* GOTHAM-BOLD_0.OTF in Resources */,
 				2A370DDE1F39A057004BB0FF /* Information in Resources */,
 				2A370ED31F39CA4D004BB0FF /* GOTHAM-ULTRA.TTF in Resources */,
 				2A370DDA1F39A047004BB0FF /* Information in Resources */,
 				2A370ED51F39CA4D004BB0FF /* GOTHAM-XLIGHT.TTF in Resources */,
+				2A2813421F4D62A90036BBCF /* Second_Intro.jpg in Resources */,
 				2A370DE81F39A073004BB0FF /* Information in Resources */,
 				2A370DA71F39935D004BB0FF /* LaunchScreen.storyboard in Resources */,
 				2A370ECD1F39CA4D004BB0FF /* GOTHAM-LIGHT_0.OTF in Resources */,
@@ -901,6 +926,7 @@
 				2A370DE41F39A066004BB0FF /* Information in Resources */,
 				2A370DE01F39A05C004BB0FF /* Information in Resources */,
 				2A370ECA1F39CA4D004BB0FF /* GOTHAM-BOLDITALIC.TTF in Resources */,
+				2A2813431F4D62A90036BBCF /* Third_Intro.png in Resources */,
 				2A370E671F39A655004BB0FF /* LICENSE in Resources */,
 				2A370ED71F39CA4D004BB0FF /* Apache License.txt in Resources */,
 				2A370EE01F39CA4D004BB0FF /* Roboto-MediumItalic.ttf in Resources */,
@@ -920,6 +946,7 @@
 				2A370EDB1F39CA4D004BB0FF /* Roboto-BoldItalic.ttf in Resources */,
 				2A370E5B1F39A655004BB0FF /* .gitkeep in Resources */,
 				2A370EC61F39CA4D004BB0FF /* GOTHAM-BLACK.TTF in Resources */,
+				2A2813401F4D62A90036BBCF /* First_Intro.png in Resources */,
 				2A370DA41F39935D004BB0FF /* Assets.xcassets in Resources */,
 				2A370ECF1F39CA4D004BB0FF /* GOTHAM-MEDIUM.TTF in Resources */,
 				2A370D9F1F39935D004BB0FF /* Main.storyboard in Resources */,
@@ -1128,6 +1155,7 @@
 				2A370E8E1F39A656004BB0FF /* Reachability.m in Sources */,
 				2A370E9E1F39A656004BB0FF /* UIView+WebCacheOperation.m in Sources */,
 				2A370E841F39A655004BB0FF /* NVActivityIndicatorAnimationPacman.swift in Sources */,
+				2A28133B1F4D5C640036BBCF /* PageViewController.swift in Sources */,
 				2A370E651F39A655004BB0FF /* DTScrollView.swift in Sources */,
 				2A370E781F39A655004BB0FF /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */,
 				2A370E631F39A655004BB0FF /* DTPhotoViewerControllerDataSource.swift in Sources */,

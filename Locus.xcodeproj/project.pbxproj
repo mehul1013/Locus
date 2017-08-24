@@ -867,15 +867,18 @@
 				TargetAttributes = {
 					2A370D951F39935D004BB0FF = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 9HW2L673H6;
 						ProvisioningStyle = Manual;
 					};
 					2A370DAC1F39935D004BB0FF = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 9HW2L673H6;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2A370D951F39935D004BB0FF;
 					};
 					2A370DB71F39935D004BB0FF = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 9HW2L673H6;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2A370D951F39935D004BB0FF;
 					};
@@ -1269,9 +1272,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: joseph sonny (9HW2L673H6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: joseph sonny (9HW2L673H6)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9HW2L673H6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1291,6 +1296,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "8e9a8e7e-6395-4ec4-be49-0feae2705887";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1318,9 +1324,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: joseph sonny (9HW2L673H6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: joseph sonny (9HW2L673H6)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9HW2L673H6;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1333,6 +1341,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "8e9a8e7e-6395-4ec4-be49-0feae2705887";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -1344,12 +1353,15 @@
 			baseConfigurationReference = 1150211CA06F67919D8F4924 /* Pods-Locus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: joseph sonny (9HW2L673H6)";
+				DEVELOPMENT_TEAM = 9HW2L673H6;
 				INFOPLIST_FILE = Locus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mehula.Locus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.apex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8e9a8e7e-6395-4ec4-be49-0feae2705887";
+				PROVISIONING_PROFILE_SPECIFIER = Apex_AdHoc_March;
 				SWIFT_OBJC_BRIDGING_HEADER = Locus/Locus_Bridging_Header.h;
 				SWIFT_VERSION = 3.0;
 			};
@@ -1360,12 +1372,15 @@
 			baseConfigurationReference = 6A4B6224A8E09CE420D1C4AA /* Pods-Locus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: joseph sonny (9HW2L673H6)";
+				DEVELOPMENT_TEAM = 9HW2L673H6;
 				INFOPLIST_FILE = Locus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mehula.Locus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.apex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8e9a8e7e-6395-4ec4-be49-0feae2705887";
+				PROVISIONING_PROFILE_SPECIFIER = Apex_AdHoc_March;
 				SWIFT_OBJC_BRIDGING_HEADER = Locus/Locus_Bridging_Header.h;
 				SWIFT_VERSION = 3.0;
 			};

@@ -23,6 +23,11 @@ class PageViewController: UIPageViewController {
     }
     
     var btnFacebook: UIButton!
+    var pageControl: UIPageControl!
+    
+    // Track the current index
+    var currentIndex: Int?
+    var pendingIndex: Int?
 
     
     //MARK: - View Life Cycle
@@ -30,6 +35,8 @@ class PageViewController: UIPageViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        //Set Delegate
+        delegate = self
         dataSource = self
         
         if let firstViewController = orderedViewControllers.first {
@@ -42,8 +49,16 @@ class PageViewController: UIPageViewController {
         //Create Facebook Button
         btnFacebook = UIButton(frame: CGRect(x: 0, y: self.view.frame.size.height - 44, width: self.view.frame.size.width, height: 44))
         btnFacebook.setTitle("Login with Facebook", for: .normal)
-        btnFacebook.backgroundColor = UIColor.blue
+        btnFacebook.titleLabel?.font = UIFont(name: Constants.Fonts.Roboto_Medium, size: 17.0)
+        btnFacebook.backgroundColor = Constants.COLOR_FACEBOOK
+        btnFacebook.addTarget(self, action: #selector(btnFacebookClicked), for: .touchUpInside)
         self.view.addSubview(btnFacebook)
+        
+        //Create Page Control
+        pageControl = UIPageControl(frame: CGRect(x: 0, y: self.view.frame.size.height - 75, width: self.view.frame.size.width, height: 31))
+        pageControl.currentPage = 1
+        pageControl.numberOfPages = 4
+        self.view.addSubview(pageControl)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,10 +75,16 @@ class PageViewController: UIPageViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    
+    //MARK: - Facebook
+    func btnFacebookClicked() -> Void {
+        print("Facebook clicked ...")
+    }
 }
 
 //MARK: - UIPageViewController Data Source
-extension PageViewController: UIPageViewControllerDataSource {
+extension PageViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
         guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
@@ -101,5 +122,21 @@ extension PageViewController: UIPageViewControllerDataSource {
         }
         
         return orderedViewControllers[nextIndex]
+    }
+    
+    
+    func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
+        
+        pendingIndex = orderedViewControllers.index(of: pendingViewControllers.first!)
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        
+        if completed {
+            currentIndex = pendingIndex
+            if let index = currentIndex {
+                pageControl.currentPage = index
+            }
+        }
     }
 }

@@ -42,7 +42,7 @@ class Constants: NSObject {
     static let COLOR_GREEN_USERNAME = UIColor(colorLiteralRed: 0/255.0, green: 128/255.0, blue: 64/255.0, alpha: 1.0)
     static let COLOR_GREEN_VERIFIED = UIColor(colorLiteralRed: 26/255.0, green: 182/255.0, blue: 155/255.0, alpha: 1.0)
     
-    static let COLOR_PLEDGE = UIColor(colorLiteralRed: 249/255.0, green: 136/255.0, blue: 86/255.0, alpha: 1.0)
+    static let COLOR_FACEBOOK = UIColor(colorLiteralRed: 64/255.0, green: 93/255.0, blue: 159/255.0, alpha: 1.0)
     
     
     //MARK: - Fonts

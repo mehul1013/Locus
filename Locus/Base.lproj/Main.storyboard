@@ -85,7 +85,43 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZq-cB-Wnq">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.70079730308219179" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArO-oX-f6a">
+                                        <rect key="frame" x="30" y="30" width="315" height="562"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="First_Intro.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZVb-2g-man">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="446"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAe-aW-Kp6">
+                                                <rect key="frame" x="8" y="454" width="299" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="D9L-R1-Bmg"/>
+                                                </constraints>
+                                                <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</string>
+                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="ZVb-2g-man" firstAttribute="top" secondItem="ArO-oX-f6a" secondAttribute="top" id="5wb-UE-l0h"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZVb-2g-man" secondAttribute="trailing" id="E6d-jA-xvj"/>
+                                            <constraint firstItem="kAe-aW-Kp6" firstAttribute="top" secondItem="ZVb-2g-man" secondAttribute="bottom" constant="8" id="O6k-e2-S6N"/>
+                                            <constraint firstItem="ZVb-2g-man" firstAttribute="leading" secondItem="ArO-oX-f6a" secondAttribute="leading" id="anh-hu-DVD"/>
+                                            <constraint firstAttribute="bottom" secondItem="kAe-aW-Kp6" secondAttribute="bottom" constant="8" id="gNi-6d-yg2"/>
+                                            <constraint firstItem="kAe-aW-Kp6" firstAttribute="leading" secondItem="ArO-oX-f6a" secondAttribute="leading" constant="8" id="hSl-5H-vzS"/>
+                                            <constraint firstAttribute="trailing" secondItem="kAe-aW-Kp6" secondAttribute="trailing" constant="8" id="knc-kK-eqg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.80364404965753422" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ArO-oX-f6a" firstAttribute="leading" secondItem="kZq-cB-Wnq" secondAttribute="leading" constant="30" id="PLQ-cm-mlf"/>
+                                    <constraint firstAttribute="trailing" secondItem="ArO-oX-f6a" secondAttribute="trailing" constant="30" id="pPl-od-hNe"/>
+                                    <constraint firstAttribute="bottom" secondItem="ArO-oX-f6a" secondAttribute="bottom" constant="75" id="uzr-Mk-7IK"/>
+                                    <constraint firstItem="ArO-oX-f6a" firstAttribute="top" secondItem="kZq-cB-Wnq" secondAttribute="top" constant="30" id="yLX-UK-3FK"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -103,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyj-h2-OwJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1551" y="-559"/>
+            <point key="canvasLocation" x="1549.5999999999999" y="-559.07046476761627"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="t8B-QP-ZKz">
@@ -122,19 +158,51 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uPb-RG-HGJ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.70079730309999999" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.79845355309999999" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jaa-TW-cKz">
+                                <rect key="frame" x="30" y="30" width="315" height="562"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Second_Intro.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lh1-wm-Pfk">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="446"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSP-lF-C7c">
+                                        <rect key="frame" x="8" y="454" width="299" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="4Pb-iG-vrn"/>
+                                        </constraints>
+                                        <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</string>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="LSP-lF-C7c" firstAttribute="top" secondItem="lh1-wm-Pfk" secondAttribute="bottom" constant="8" id="EGi-Ob-9ap"/>
+                                    <constraint firstAttribute="trailing" secondItem="lh1-wm-Pfk" secondAttribute="trailing" id="F8H-fT-kus"/>
+                                    <constraint firstItem="LSP-lF-C7c" firstAttribute="leading" secondItem="Jaa-TW-cKz" secondAttribute="leading" constant="8" id="Syk-ky-61W"/>
+                                    <constraint firstAttribute="bottom" secondItem="LSP-lF-C7c" secondAttribute="bottom" constant="8" id="btV-yn-dw0"/>
+                                    <constraint firstItem="lh1-wm-Pfk" firstAttribute="top" secondItem="Jaa-TW-cKz" secondAttribute="top" id="hnV-6K-i8o"/>
+                                    <constraint firstAttribute="trailing" secondItem="LSP-lF-C7c" secondAttribute="trailing" constant="8" id="jph-3x-SmM"/>
+                                    <constraint firstItem="lh1-wm-Pfk" firstAttribute="leading" secondItem="Jaa-TW-cKz" secondAttribute="leading" id="mb9-Vp-Xn5"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="O5o-xT-Tjy" firstAttribute="top" secondItem="Z4V-yO-ezV" secondAttribute="bottom" id="C73-w0-8uh"/>
                             <constraint firstItem="O5o-xT-Tjy" firstAttribute="top" secondItem="uPb-RG-HGJ" secondAttribute="bottom" id="G3U-jm-zZz"/>
+                            <constraint firstItem="Jaa-TW-cKz" firstAttribute="leading" secondItem="fqv-jn-1i4" secondAttribute="leading" constant="30" id="IfA-fW-1Gz"/>
                             <constraint firstItem="uPb-RG-HGJ" firstAttribute="top" secondItem="fqv-jn-1i4" secondAttribute="top" id="JUp-Xq-jUn"/>
                             <constraint firstItem="Z4V-yO-ezV" firstAttribute="leading" secondItem="fqv-jn-1i4" secondAttribute="leading" id="Qx0-LX-v0U"/>
                             <constraint firstItem="uPb-RG-HGJ" firstAttribute="leading" secondItem="fqv-jn-1i4" secondAttribute="leading" id="anQ-Gp-pKD"/>
+                            <constraint firstItem="Jaa-TW-cKz" firstAttribute="top" secondItem="fqv-jn-1i4" secondAttribute="top" constant="30" id="bDw-4Q-Crh"/>
                             <constraint firstItem="Z4V-yO-ezV" firstAttribute="top" secondItem="fqv-jn-1i4" secondAttribute="top" id="due-S9-dCf"/>
+                            <constraint firstAttribute="trailing" secondItem="Jaa-TW-cKz" secondAttribute="trailing" constant="30" id="ncD-PU-sJM"/>
                             <constraint firstAttribute="trailing" secondItem="Z4V-yO-ezV" secondAttribute="trailing" id="pDa-sN-h3d"/>
                             <constraint firstAttribute="trailing" secondItem="uPb-RG-HGJ" secondAttribute="trailing" id="qeF-eM-Ex7"/>
+                            <constraint firstItem="O5o-xT-Tjy" firstAttribute="top" secondItem="Jaa-TW-cKz" secondAttribute="bottom" constant="75" id="yoH-QF-L4J"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -181,19 +249,51 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKW-xC-wTg">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.70079730309999999" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.79831977741506854" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZiP-V7-Fkt">
+                                <rect key="frame" x="30" y="30" width="315" height="562"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Third_Intro.png" translatesAutoresizingMaskIntoConstraints="NO" id="8oZ-h0-BCP">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="446"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cth-x0-uSg">
+                                        <rect key="frame" x="8" y="454" width="299" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="P4J-4l-Muj"/>
+                                        </constraints>
+                                        <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</string>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="8oZ-h0-BCP" firstAttribute="leading" secondItem="ZiP-V7-Fkt" secondAttribute="leading" id="0aa-WE-PIs"/>
+                                    <constraint firstAttribute="trailing" secondItem="cth-x0-uSg" secondAttribute="trailing" constant="8" id="Ako-qY-7pZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="8oZ-h0-BCP" secondAttribute="trailing" id="FvT-zy-nXM"/>
+                                    <constraint firstItem="cth-x0-uSg" firstAttribute="leading" secondItem="ZiP-V7-Fkt" secondAttribute="leading" constant="8" id="QBv-VQ-4He"/>
+                                    <constraint firstAttribute="bottom" secondItem="cth-x0-uSg" secondAttribute="bottom" constant="8" id="T3l-h1-ho7"/>
+                                    <constraint firstItem="cth-x0-uSg" firstAttribute="top" secondItem="8oZ-h0-BCP" secondAttribute="bottom" constant="8" id="bZ0-k7-gSV"/>
+                                    <constraint firstItem="8oZ-h0-BCP" firstAttribute="top" secondItem="ZiP-V7-Fkt" secondAttribute="top" id="bir-39-DlB"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="RKW-xC-wTg" secondAttribute="trailing" id="2qX-aU-XRe"/>
                             <constraint firstItem="RKW-xC-wTg" firstAttribute="top" secondItem="Jnb-s3-nrH" secondAttribute="top" id="3ex-0N-DA0"/>
+                            <constraint firstItem="ZiP-V7-Fkt" firstAttribute="top" secondItem="Jnb-s3-nrH" secondAttribute="top" constant="30" id="5cs-iC-TBX"/>
                             <constraint firstItem="OJ4-3K-j4V" firstAttribute="leading" secondItem="Jnb-s3-nrH" secondAttribute="leading" id="9Vz-aP-nUA"/>
+                            <constraint firstItem="vnR-sK-q1R" firstAttribute="top" secondItem="ZiP-V7-Fkt" secondAttribute="bottom" constant="75" id="GVf-RE-0Xq"/>
                             <constraint firstItem="RKW-xC-wTg" firstAttribute="leading" secondItem="Jnb-s3-nrH" secondAttribute="leading" id="IJH-hZ-aut"/>
                             <constraint firstItem="OJ4-3K-j4V" firstAttribute="top" secondItem="Jnb-s3-nrH" secondAttribute="top" id="Ist-qF-cGh"/>
                             <constraint firstAttribute="trailing" secondItem="OJ4-3K-j4V" secondAttribute="trailing" id="LGa-ge-v7A"/>
                             <constraint firstItem="vnR-sK-q1R" firstAttribute="top" secondItem="RKW-xC-wTg" secondAttribute="bottom" id="Mnm-f8-vIW"/>
+                            <constraint firstItem="ZiP-V7-Fkt" firstAttribute="leading" secondItem="Jnb-s3-nrH" secondAttribute="leading" constant="30" id="W28-GJ-fff"/>
                             <constraint firstItem="vnR-sK-q1R" firstAttribute="top" secondItem="OJ4-3K-j4V" secondAttribute="bottom" id="aXS-Rz-sMb"/>
+                            <constraint firstAttribute="trailing" secondItem="ZiP-V7-Fkt" secondAttribute="trailing" constant="30" id="sWp-Oo-aN9"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -220,16 +320,48 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.70079730309999999" colorSpace="calibratedWhite"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mD7-3b-k0J">
+                                <rect key="frame" x="30" y="30" width="315" height="562"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fourth_Intro.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wl7-s4-meP">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="446"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebP-jp-ZaV">
+                                        <rect key="frame" x="8" y="454" width="299" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="TBq-6p-3Dk"/>
+                                        </constraints>
+                                        <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</string>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Wl7-s4-meP" secondAttribute="trailing" id="4Kw-ai-lab"/>
+                                    <constraint firstItem="Wl7-s4-meP" firstAttribute="top" secondItem="mD7-3b-k0J" secondAttribute="top" id="Y78-pz-fbK"/>
+                                    <constraint firstItem="ebP-jp-ZaV" firstAttribute="leading" secondItem="mD7-3b-k0J" secondAttribute="leading" constant="8" id="e2Q-Hk-JY4"/>
+                                    <constraint firstItem="ebP-jp-ZaV" firstAttribute="top" secondItem="Wl7-s4-meP" secondAttribute="bottom" constant="8" id="fdg-Vc-g94"/>
+                                    <constraint firstAttribute="bottom" secondItem="ebP-jp-ZaV" secondAttribute="bottom" constant="8" id="jhw-6Q-b5y"/>
+                                    <constraint firstAttribute="trailing" secondItem="ebP-jp-ZaV" secondAttribute="trailing" constant="8" id="kTx-Pg-tTY"/>
+                                    <constraint firstItem="Wl7-s4-meP" firstAttribute="leading" secondItem="mD7-3b-k0J" secondAttribute="leading" id="vlA-Xm-0aZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mD7-3b-k0J" secondAttribute="trailing" constant="30" id="6Rp-e9-1bn"/>
                             <constraint firstItem="DFg-yx-7aD" firstAttribute="leading" secondItem="cPW-Uw-nTT" secondAttribute="leading" id="Hnj-HJ-Mqi"/>
                             <constraint firstItem="VD6-XT-lp8" firstAttribute="top" secondItem="DFg-yx-7aD" secondAttribute="bottom" id="Qvc-8b-duz"/>
                             <constraint firstAttribute="trailing" secondItem="DFg-yx-7aD" secondAttribute="trailing" id="SLf-cA-xTI"/>
+                            <constraint firstItem="mD7-3b-k0J" firstAttribute="leading" secondItem="cPW-Uw-nTT" secondAttribute="leading" constant="30" id="aEo-9z-mXn"/>
                             <constraint firstItem="16s-jY-Bn6" firstAttribute="leading" secondItem="cPW-Uw-nTT" secondAttribute="leading" id="eM3-t4-B1n"/>
                             <constraint firstAttribute="trailing" secondItem="16s-jY-Bn6" secondAttribute="trailing" id="eZ3-yj-ZPH"/>
                             <constraint firstItem="16s-jY-Bn6" firstAttribute="top" secondItem="cPW-Uw-nTT" secondAttribute="top" id="gqh-9b-Vhf"/>
                             <constraint firstItem="DFg-yx-7aD" firstAttribute="top" secondItem="cPW-Uw-nTT" secondAttribute="top" id="gvC-pu-9hO"/>
+                            <constraint firstItem="VD6-XT-lp8" firstAttribute="top" secondItem="mD7-3b-k0J" secondAttribute="bottom" constant="75" id="hch-uD-TgG"/>
+                            <constraint firstItem="mD7-3b-k0J" firstAttribute="top" secondItem="cPW-Uw-nTT" secondAttribute="top" constant="30" id="kty-G9-Cdl"/>
                             <constraint firstItem="VD6-XT-lp8" firstAttribute="top" secondItem="16s-jY-Bn6" secondAttribute="bottom" id="nBO-sa-9qm"/>
                         </constraints>
                     </view>

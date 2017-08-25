@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+import CoreLocation
 
 class PageViewController: UIPageViewController {
     
@@ -72,6 +74,7 @@ class PageViewController: UIPageViewController {
     }
 
     
+    //MARK: - Status Bar Visibility
     override var prefersStatusBarHidden: Bool {
         return true
     }
@@ -80,6 +83,108 @@ class PageViewController: UIPageViewController {
     //MARK: - Facebook
     func btnFacebookClicked() -> Void {
         print("Facebook clicked ...")
+        
+        //Dashboard
+        //self.navigateToDashboard()
+        //return
+        
+        
+        
+        //Check LOCATION permission
+        guard isLocationPermissionEnabled() else {
+            return
+        }
+        
+        let login: FBSDKLoginManager! = FBSDKLoginManager()
+        login.loginBehavior = .browser
+        
+        //let permissions = ["public_profile", "email"]
+        let permissions = ["public_profile", "email", "user_birthday", "user_education_history", "user_friends", "user_hometown", "user_likes", "user_location", "user_work_history", "user_photos", "user_about_me"]
+        
+        login.logOut()
+        login.logIn(withReadPermissions: permissions, from: self, handler: { (result, error) -> Void in
+            
+            if ((error) != nil) {
+                print("Process error")
+            } else if (result?.isCancelled)! {
+                print("Cancelled")
+            } else {
+                print("Logged in")
+                
+                //Start Loading
+                //AppUtils.startLoading(view: self.view)
+                
+                let graphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields" : "id,name,first_name,last_name,email,picture.type(large),birthday,about,education,gender,hometown,interested_in,work,likes.limit(1000),friends"])
+                
+                let connection = FBSDKGraphRequestConnection()
+                connection.add(graphRequest, completionHandler: { (connection, result, error) in
+                    
+                    if error == nil {
+                        print("User Info : \(result!)")
+                        //self.callWebServiceToSaveUserData(dict: result as! [String:AnyObject])
+                        
+                        //Navigate to Dashboard
+                        self.navigateToDashboard()
+                    }else {
+                        print("Error Getting Info \(error)");
+                        
+                        //Stop Loading
+                        //AppUtils.stopLoading()
+                    }
+                })
+                connection.start()
+            }
+        })
+    }
+    
+    
+    //MARK: - Navigate To Dashboard
+    func navigateToDashboard() -> Void {
+        let dashboardVC = self.storyboard?.instantiateViewController(withIdentifier: Constants.StoryBoardIdentifier.storyDashboardVC) as! Dashboard
+        
+        self.navigationController?.pushViewController(dashboardVC, animated: true)
+    }
+    
+    
+    
+    //MARK: - Location Permission Enable or not
+    func isLocationPermissionEnabled() -> Bool {
+        if CLLocationManager.locationServicesEnabled() {
+            switch(CLLocationManager.authorizationStatus()) {
+            case .notDetermined, .restricted, .denied:
+                //AppUtils.showAlertWithTitle(title: AlertMessages.NO_LOCATION_PERMISSION, message: AlertMessages.ENABLE_LOCATION, viewController: self)
+                
+                self.openSettingScreen()
+                
+                return false
+            case .authorizedAlways, .authorizedWhenInUse:
+                print("Location : Access")
+                return true
+            }
+        } else {
+            AppUtils.showAlertWithTitle(title: AlertMessages.NO_LOCATION_PERMISSION, message: AlertMessages.ENABLE_LOCATION, viewController: self)
+            return false
+        }
+    }
+    
+    func openSettingScreen() -> Void {
+        let alert = UIAlertController(title: "" , message: AlertMessages.ENABLE_LOCATION, preferredStyle: .actionSheet)
+        let actionLogout = UIAlertAction(title: "Open Setting", style: .default) {
+            UIAlertAction in
+            
+            //Navigate To Setting Screen
+            self.openSetting()
+        }
+        
+        // Add the actions
+        alert.addAction(actionLogout)
+        
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+    func openSetting() -> Void {
+        UIApplication.shared.openURL(URL(string: UIApplicationOpenSettingsURLString)!)
     }
 }
 

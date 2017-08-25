@@ -139,6 +139,18 @@
 		2A370EE11F39CA4D004BB0FF /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A370EC31F39CA4D004BB0FF /* Roboto-Regular.ttf */; };
 		2A370EE21F39CA4D004BB0FF /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A370EC41F39CA4D004BB0FF /* Roboto-Thin.ttf */; };
 		2A370EE31F39CA4D004BB0FF /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A370EC51F39CA4D004BB0FF /* Roboto-ThinItalic.ttf */; };
+		2A6AD1281F502C5E00FBCA29 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6AD1241F502C5E00FBCA29 /* Bolts.framework */; };
+		2A6AD1291F502C5E00FBCA29 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6AD1251F502C5E00FBCA29 /* FBSDKCoreKit.framework */; };
+		2A6AD12A1F502C5E00FBCA29 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6AD1261F502C5E00FBCA29 /* FBSDKLoginKit.framework */; };
+		2A6AD12B1F502C5E00FBCA29 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6AD1271F502C5E00FBCA29 /* FBSDKShareKit.framework */; };
+		2A6AD1301F50369100FBCA29 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6AD12F1F50369100FBCA29 /* Dashboard.swift */; };
+		2A6AD1321F503FF000FBCA29 /* CellPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6AD1311F503FF000FBCA29 /* CellPeople.swift */; };
+		2A6AD1381F50484300FBCA29 /* Model1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A6AD1331F50484300FBCA29 /* Model1.png */; };
+		2A6AD1391F50484300FBCA29 /* Model2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A6AD1341F50484300FBCA29 /* Model2.png */; };
+		2A6AD13A1F50484300FBCA29 /* Model3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A6AD1351F50484300FBCA29 /* Model3.png */; };
+		2A6AD13B1F50484300FBCA29 /* Model4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A6AD1361F50484300FBCA29 /* Model4.png */; };
+		2A6AD13C1F50484300FBCA29 /* Model5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A6AD1371F50484300FBCA29 /* Model5.png */; };
+		2A6AD1411F505ED500FBCA29 /* PhotoViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6AD1401F505ED500FBCA29 /* PhotoViewer.swift */; };
 		5C1ED105C2E503C89DD940E1 /* Pods_LocusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC70EBD274C36363A6361D50 /* Pods_LocusUITests.framework */; };
 		685E3A92132C55D8713B2CFE /* Pods_LocusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCFC68CAE2B31C618B6C825A /* Pods_LocusTests.framework */; };
 /* End PBXBuildFile section */
@@ -320,6 +332,18 @@
 		2A370EC31F39CA4D004BB0FF /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		2A370EC41F39CA4D004BB0FF /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		2A370EC51F39CA4D004BB0FF /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		2A6AD1241F502C5E00FBCA29 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Frameworks/Bolts.framework; sourceTree = "<group>"; };
+		2A6AD1251F502C5E00FBCA29 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		2A6AD1261F502C5E00FBCA29 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		2A6AD1271F502C5E00FBCA29 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Frameworks/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		2A6AD12F1F50369100FBCA29 /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		2A6AD1311F503FF000FBCA29 /* CellPeople.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellPeople.swift; sourceTree = "<group>"; };
+		2A6AD1331F50484300FBCA29 /* Model1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Model1.png; sourceTree = "<group>"; };
+		2A6AD1341F50484300FBCA29 /* Model2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Model2.png; sourceTree = "<group>"; };
+		2A6AD1351F50484300FBCA29 /* Model3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Model3.png; sourceTree = "<group>"; };
+		2A6AD1361F50484300FBCA29 /* Model4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Model4.png; sourceTree = "<group>"; };
+		2A6AD1371F50484300FBCA29 /* Model5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Model5.png; sourceTree = "<group>"; };
+		2A6AD1401F505ED500FBCA29 /* PhotoViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewer.swift; sourceTree = "<group>"; };
 		3D4EE44E5E6AEE96869A3AD4 /* Pods-LocusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocusUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocusUITests/Pods-LocusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		58EB75F662A08BF2C29E3204 /* Pods-LocusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocusTests/Pods-LocusTests.release.xcconfig"; sourceTree = "<group>"; };
 		6A4B6224A8E09CE420D1C4AA /* Pods-Locus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Locus/Pods-Locus.release.xcconfig"; sourceTree = "<group>"; };
@@ -335,8 +359,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A6AD12B1F502C5E00FBCA29 /* FBSDKShareKit.framework in Frameworks */,
+				2A6AD1281F502C5E00FBCA29 /* Bolts.framework in Frameworks */,
+				2A6AD1291F502C5E00FBCA29 /* FBSDKCoreKit.framework in Frameworks */,
 				2A370EA41F39C039004BB0FF /* FacebookImagePicker.framework in Frameworks */,
 				2A370EA21F39C029004BB0FF /* UICollectionViewLeftAlignedLayout.framework in Frameworks */,
+				2A6AD12A1F502C5E00FBCA29 /* FBSDKLoginKit.framework in Frameworks */,
 				2A370EA01F39C01D004BB0FF /* FLAnimatedImage.framework in Frameworks */,
 				136B349C5459D8E084186D5C /* Pods_Locus.framework in Frameworks */,
 			);
@@ -364,6 +392,10 @@
 		282BC14D3FE630790BBCD769 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A6AD1241F502C5E00FBCA29 /* Bolts.framework */,
+				2A6AD1251F502C5E00FBCA29 /* FBSDKCoreKit.framework */,
+				2A6AD1261F502C5E00FBCA29 /* FBSDKLoginKit.framework */,
+				2A6AD1271F502C5E00FBCA29 /* FBSDKShareKit.framework */,
 				2A370EA31F39C039004BB0FF /* FacebookImagePicker.framework */,
 				2A370EA11F39C029004BB0FF /* UICollectionViewLeftAlignedLayout.framework */,
 				2A370E9F1F39C01D004BB0FF /* FLAnimatedImage.framework */,
@@ -481,6 +513,11 @@
 				2A28133D1F4D62A90036BBCF /* Fourth_Intro.png */,
 				2A28133E1F4D62A90036BBCF /* Second_Intro.jpg */,
 				2A28133F1F4D62A90036BBCF /* Third_Intro.png */,
+				2A6AD1331F50484300FBCA29 /* Model1.png */,
+				2A6AD1341F50484300FBCA29 /* Model2.png */,
+				2A6AD1351F50484300FBCA29 /* Model3.png */,
+				2A6AD1361F50484300FBCA29 /* Model4.png */,
+				2A6AD1371F50484300FBCA29 /* Model5.png */,
 				2A370DDB1F39A04C004BB0FF /* Information */,
 			);
 			path = Media;
@@ -547,6 +584,8 @@
 			isa = PBXGroup;
 			children = (
 				2A370DE91F39A07B004BB0FF /* Information */,
+				2A6AD13F1F505ED500FBCA29 /* PhotoViewer */,
+				2A6AD12E1F50369100FBCA29 /* Dashboard */,
 				2A2813391F4D5C640036BBCF /* PageViewController */,
 				2A370DEB1F39A1EC004BB0FF /* Introduction */,
 				2A370DEC1F39A20A004BB0FF /* SuperViewController */,
@@ -777,6 +816,23 @@
 			path = Roboto;
 			sourceTree = "<group>";
 		};
+		2A6AD12E1F50369100FBCA29 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				2A6AD12F1F50369100FBCA29 /* Dashboard.swift */,
+				2A6AD1311F503FF000FBCA29 /* CellPeople.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		2A6AD13F1F505ED500FBCA29 /* PhotoViewer */ = {
+			isa = PBXGroup;
+			children = (
+				2A6AD1401F505ED500FBCA29 /* PhotoViewer.swift */,
+			);
+			path = PhotoViewer;
+			sourceTree = "<group>";
+		};
 		48473096A3ED753DBAFECCB7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -910,6 +966,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A370DD81F39A041004BB0FF /* Information in Resources */,
+				2A6AD13B1F50484300FBCA29 /* Model4.png in Resources */,
 				2A370ECB1F39CA4D004BB0FF /* GOTHAM-BOOKITALIC_0.OTF in Resources */,
 				2A370EDE1F39CA4D004BB0FF /* Roboto-LightItalic.ttf in Resources */,
 				2A370DE61F39A06C004BB0FF /* Information in Resources */,
@@ -924,6 +981,7 @@
 				2A2813421F4D62A90036BBCF /* Second_Intro.jpg in Resources */,
 				2A370DE81F39A073004BB0FF /* Information in Resources */,
 				2A370DA71F39935D004BB0FF /* LaunchScreen.storyboard in Resources */,
+				2A6AD1381F50484300FBCA29 /* Model1.png in Resources */,
 				2A370ECD1F39CA4D004BB0FF /* GOTHAM-LIGHT_0.OTF in Resources */,
 				2A370ECE1F39CA4D004BB0FF /* GOTHAM-LIGHTITALIC.TTF in Resources */,
 				2A370DE41F39A066004BB0FF /* Information in Resources */,
@@ -953,9 +1011,12 @@
 				2A370DA41F39935D004BB0FF /* Assets.xcassets in Resources */,
 				2A370ECF1F39CA4D004BB0FF /* GOTHAM-MEDIUM.TTF in Resources */,
 				2A370D9F1F39935D004BB0FF /* Main.storyboard in Resources */,
+				2A6AD13A1F50484300FBCA29 /* Model3.png in Resources */,
 				2A370EDD1F39CA4D004BB0FF /* Roboto-Light.ttf in Resources */,
 				2A370ED41F39CA4D004BB0FF /* GOTHAM-ULTRAITALIC.TTF in Resources */,
+				2A6AD1391F50484300FBCA29 /* Model2.png in Resources */,
 				2A370EDC1F39CA4D004BB0FF /* Roboto-Italic.ttf in Resources */,
+				2A6AD13C1F50484300FBCA29 /* Model5.png in Resources */,
 				2A370E5C1F39A655004BB0FF /* .gitkeep in Resources */,
 				2A370EE11F39CA4D004BB0FF /* Roboto-Regular.ttf in Resources */,
 				2A370ED01F39CA4D004BB0FF /* GOTHAM-MEDIUMITALIC.TTF in Resources */,
@@ -1142,6 +1203,7 @@
 				2A370E8C1F39A655004BB0FF /* NVActivityIndicatorViewable.swift in Sources */,
 				2A370E9C1F39A656004BB0FF /* UIImageView+HighlightedWebCache.m in Sources */,
 				2A370E711F39A655004BB0FF /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */,
+				2A6AD1411F505ED500FBCA29 /* PhotoViewer.swift in Sources */,
 				2A370E881F39A655004BB0FF /* NVActivityIndicatorAnimationDelegate.swift in Sources */,
 				2A370E6E1F39A655004BB0FF /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */,
 				2A370E811F39A655004BB0FF /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */,
@@ -1176,6 +1238,7 @@
 				2A370DA21F39935D004BB0FF /* Locus.xcdatamodeld in Sources */,
 				2A370E961F39A656004BB0FF /* SDWebImageManager.m in Sources */,
 				2A370E791F39A655004BB0FF /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */,
+				2A6AD1321F503FF000FBCA29 /* CellPeople.swift in Sources */,
 				2A370E601F39A655004BB0FF /* DTPhotoCollectionViewCell.swift in Sources */,
 				2A370E9B1F39A656004BB0FF /* UIImage+WebP.m in Sources */,
 				2A370E6D1F39A655004BB0FF /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */,
@@ -1188,6 +1251,7 @@
 				2A370E7C1F39A655004BB0FF /* NVActivityIndicatorAnimationBlank.swift in Sources */,
 				2A370DEE1F39A21E004BB0FF /* SuperViewController.swift in Sources */,
 				2A370E7F1F39A655004BB0FF /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */,
+				2A6AD1301F50369100FBCA29 /* Dashboard.swift in Sources */,
 				2A370E831F39A655004BB0FF /* NVActivityIndicatorAnimationOrbit.swift in Sources */,
 				2A370E701F39A655004BB0FF /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */,
 				2A370E8D1F39A655004BB0FF /* README.md in Sources */,
@@ -1355,6 +1419,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: joseph sonny (9HW2L673H6)";
 				DEVELOPMENT_TEAM = 9HW2L673H6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = Locus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1374,6 +1442,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: joseph sonny (9HW2L673H6)";
 				DEVELOPMENT_TEAM = 9HW2L673H6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = Locus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -74,7 +74,11 @@ class Constants: NSObject {
         
         // Main StoryBoard
         static let storyIntroductionVC                  = "Introduction"
-        static let storySearchNearByVC                  = "SearchNearby"
+        static let storyDashboardVC                     = "Dashboard"
+        
+        
+        
+        
         static let storySuggestPeoplesVC                = "SuggestPeoples"
         
         

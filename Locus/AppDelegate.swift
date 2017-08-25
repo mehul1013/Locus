@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 import CoreLocation
+import UserNotifications
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
@@ -27,6 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         
         //Location Manager
         self.initializeLocationManager()
+        
+        //Facebook configuration
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         
         return true
@@ -48,6 +53,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        //Facebook Initialization
+        FBSDKAppEvents.activateApp()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
@@ -55,6 +63,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
     }
+    
+    
+    //MARK: - Facebook
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        
+        let parsedURL = BFURL(inboundURL: url, sourceApplication: sourceApplication)
+        if ((parsedURL?.appLinkData) != nil) {
+            // this is an applink url, handle it here
+            let targetUrl = parsedURL?.targetURL
+            
+            let viewCTR = self.getCurrentViewController()
+            AppUtils.showAlertWithTitle(title: "Received link:", message: (targetUrl?.absoluteString)!, viewController: viewCTR)
+        }
+        
+        return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+    }
+    
+    //Get Current View Controller
+    func getCurrentViewController() -> UIViewController {
+        //let vc = self.window?.rootViewController
+        let navCTR = UIApplication.shared.keyWindow?.rootViewController as! UINavigationController
+        let vc = navCTR.visibleViewController
+        return vc!
+    }
+    
 
     // MARK: - Core Data stack
 
